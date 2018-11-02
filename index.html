@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Color Mixer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+    <div class="header">
+        <h1>Vamos a mezclar algunos colores</h1>
+        <h2>Será divertido</h2>
+        <h3>Selecciona los colores a mezclar</h3>
+    </div>
+    <div class="row">
+        <div class="column" style="float: left; background-color: lightgrey">
+            <p>Primer color para la mezcla:</p>
+            <select id="color1">
+                            <option value="yellow" style="background-color: yellow">Amarillo</option>
+                            <option value="blue" style="background-color:blue">Azul</option>
+                            <option value="red" style="background-color:red">Rojo</option>
+                          </select>
+        </div>
+        <div class="column" style="float:right; background-color: palevioletred">
+            <p>Segundo color para la mezcla:</p>
+            <select id="color2">
+                            <option value="yellow" style="background-color: yellow">Amarillo</option>
+                            <option value="blue" style="background-color:blue">Azul</option>
+                            <option value="red" style="background-color:red">Rojo</option>
+                            <option value="green" style="background-color:green">Verde</option>
+                            <option value="orange" style="background-color:darkorange">Naranja</option>
+                            <option value="purple" style="background-color:darkmagenta">Morado</option>
+                          </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="actions">
+            <input type="button" value="Mezclar" id="mix" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="footer">
+            <p>Sidney Aguirre</p>
+            <p>John Galeano</p>
+        </div>
+    </div>
+
+    <script src="mix.js"></script>
+
+</body>
+
+</html>
