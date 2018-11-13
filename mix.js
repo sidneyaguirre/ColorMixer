@@ -49,7 +49,10 @@ function mixer() {
             }
         }
     }
-    document.write("El color resultante es " + color3)
+    //document.write("El color resultante es " + color3)
+    let trueColor3 = []
+    trueColor3 = isColor(color3)
+    result.innerHTML = "El color resultante es " + trueColor3.name + "<img src=" + trueColor3.imagen.src + " >" + "<hr />"
     console.log(color3)
 }
 
@@ -73,4 +76,31 @@ let tertiaryColor = {
     reddishPurple: "reddishPurple",
     greenishBlue: "greenishBlue",
     blueishPurple: "blueishPurple"
+}
+
+function isColor(param) {
+    
+    if (param == primaryColor.yellow) {
+        let final = final.push(new viewColors(param, "amarillo"));
+        return final
+    }
+    else if (param == primaryColor.blue)
+        return "azul"
+    else if (param == primaryColor.red)
+        return "rojo"
+    else if (param == secondaryColor.green)
+        return "verde"
+}
+
+var imaColors = [];
+
+imaColors["yellow"] = "colors/yellow.png";
+
+
+class viewColors {
+    constructor(c, n) {
+
+        this.color = c;
+        this.name = n;
+    }
 }
