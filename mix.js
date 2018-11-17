@@ -50,9 +50,8 @@ function mixer() {
         }
     }
     //document.write("El color resultante es " + color3)
-    let trueColor3 = []
-    trueColor3 = isColor(color3)
-    result.innerHTML = "El color resultante es " + trueColor3.name + "<img src=" + trueColor3.imagen.src + " >" + "<hr />"
+    let trueColor3 = isColor(color3)
+    result.innerHTML = "El color resultante es " + trueColor3 /* + "<img src=" + trueColor3.imagen.src + " >" + "<hr />" */
     console.log(color3)
 }
 
@@ -79,11 +78,13 @@ let tertiaryColor = {
 }
 
 function isColor(param) {
-    
-    if (param == primaryColor.yellow) {
-        let final = final.push(new viewColors(param, "amarillo"));
-        return final
-    }
+
+    if (param == primaryColor.yellow)
+        return "amarillo"
+            /* {
+                    let final = final.push(new viewColors(param, "amarillo"));
+                    return final
+                } */
     else if (param == primaryColor.blue)
         return "azul"
     else if (param == primaryColor.red)
