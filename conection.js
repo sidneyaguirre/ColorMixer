@@ -3,14 +3,6 @@ let config = require('config')
 
 let url = config.DBHost
 
-mongoose.connection.on('error', (err) => {
-    if (err) {
-        console.log('ERROR:', err)
-    } else {
-        console.log('Mongoose default connection open')
-    }
-})
+console.log('########### ', url)
 
-let moon = mongoose.connect(url, { useNewUrlParser: true })
-
-exports = moon
+exports.moon = mongoose.connect(url, { useNewUrlParser: true })

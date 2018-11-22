@@ -1,5 +1,5 @@
 //let { primaryColor, secondaryColor, tertiaryColor } = require('./color')
-//let { save } = require('../repository/MongoRepository')
+let { save } = require('../../repository/MongoRepository')
 let b = document.getElementById("mix")
 b.addEventListener("click", mixer)
 

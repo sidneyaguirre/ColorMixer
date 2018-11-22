@@ -3,7 +3,7 @@ let schema = mongoose.Schema // se defina una variable Schema
 
 let colorSchemaJSON = {
     id: {
-        type: String,
+        name: String,
     }
 }
 
