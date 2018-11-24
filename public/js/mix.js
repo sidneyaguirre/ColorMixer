@@ -79,11 +79,12 @@ let tertiaryColor = {
 };
 
 function isColor(param) {
-    if (param == primaryColor.yellow) {
+    if (param == primaryColor.yellow){
         return "amarillo";
 
-        result.innerHTML = "hola" +
-    } else if (param == primaryColor.blue) return "azul";
+        //result.innerHTML = "hola" +
+    }
+    else if (param == primaryColor.blue) return "azul";
     else if (param == primaryColor.red) return "rojo";
     else if (param == secondaryColor.green) return "verde";
     else if (param == secondaryColor.orange) return "Naranja";

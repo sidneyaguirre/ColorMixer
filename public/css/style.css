@@ -21,7 +21,7 @@ body a{
 	-ms-transition:0.5s all;
 }
 .header {
-	background: url(../images/banner.jpg) no-repeat center top;
+	background: url(../images/paint.jpg) no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -2459,4 +2459,25 @@ ul.callbacks_tabs.callbacks2_tabs {
 	left: 60%;
 }
 }
+
+.result{
+	/* display: none;
+	text-decoration: none;
+	position: fixed;
+ 	overflow: hidden; */ 
+	margin: 0;
+	margin-top: 40px;
+	text-align:center;
+}
+
+select#color1,
+select#color2 {
+    color: black;
+    box-sizing: content-box;
+    font-size: 20px;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+	border-color: azure;
+}
+
 /*--media-quaries-end-here--*/
