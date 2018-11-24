@@ -2480,4 +2480,22 @@ select#color2 {
 	border-color: azure;
 }
 
+p#result {
+	color:white
+}
 /*--media-quaries-end-here--*/
+
+option#Amarillo,
+option#Azul,
+option#Rojo,
+option#Verde,
+option#Naranja,
+option#Morado,
+option#PurpuraAzulado,
+option#AzulVerdoso,
+option#AmarilloVerdoso,
+option#MoradoRojizo,
+option#RojoAnaranjado,
+option#AmarilloAnaranjado{
+    visibility: hidden;
+}

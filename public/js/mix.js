@@ -47,8 +47,9 @@ function mixer() {
             }
         }
     }
+
     let trueColor3 = isColor(color3);
-    result.innerHTML = "El color resultante es: " + trueColor3;
+    result.innerHTML = "El color resultante es: " + trueColor3 
     console.log(color3);
     axios
         .post("http://localhost:8080/savecolor/", { color: color3 }, {})
@@ -79,21 +80,55 @@ let tertiaryColor = {
 };
 
 function isColor(param) {
+    document.getElementById("Amarillo").style.visibility = 'hidden'
+    document.getElementById("Azul").style.visibility = 'hidden'
+    document.getElementById("Rojo").style.visibility = 'hidden'
+    document.getElementById("Verde").style.visibility = 'hidden'
+    document.getElementById("Naranja").style.visibility = 'hidden'
+    document.getElementById("Morado").style.visibility = 'hidden'
+    document.getElementById("PurpuraAzulado").style.visibility = 'hidden'
+    document.getElementById("AzulVerdoso").style.visibility = 'hidden'
+    document.getElementById("AmarilloVerdoso").style.visibility = 'hidden'
+    document.getElementById("MoradoRojizo").style.visibility = 'hidden'
+    document.getElementById("RojoAnaranjado").style.visibility = 'hidden'
+    document.getElementById("AmarilloAnaranjado").style.visibility = 'hidden'
     if (param == primaryColor.yellow){
-        return "amarillo";
-
-        //result.innerHTML = "hola" +
+        document.getElementById("Amarillo").style.visibility = 'visible'
+        return "amarillo"    
     }
-    else if (param == primaryColor.blue) return "azul";
-    else if (param == primaryColor.red) return "rojo";
-    else if (param == secondaryColor.green) return "verde";
-    else if (param == secondaryColor.orange) return "Naranja";
-    else if (param == secondaryColor.purple) return "Morado";
-    else if (param == tertiaryColor.blueishPurple) return "Purpura Azulado";
-    else if (param == tertiaryColor.greenishBlue) return "Azul Verdoso";
-    else if (param == tertiaryColor.greenishYellow) return "Amarillo Verdoso";
-    else if (param == tertiaryColor.reddishPurple) return "Morado rojizo";
-    else if (param == tertiaryColor.orangedRed) return "Rojo anaranjado";
-    else if (param == tertiaryColor.orangedYellow) return "Amarillo anaranjado";
-    else if (param == "No es posible combinar") return "No es posible combinar";
+    else if (param == primaryColor.blue) {
+        document.getElementById("Azul").style.visibility = 'visible'
+        return "azul"
+    }
+    else if (param == primaryColor.red) {
+        document.getElementById("Rojo").style.visibility = 'visible'
+        return "rojo"}
+    else if (param == secondaryColor.green) {
+        document.getElementById("Verde").style.visibility = 'visible'
+        return "verde"}
+    else if (param == secondaryColor.orange) {
+        document.getElementById("Naranja").style.visibility = 'visible'
+        return "Naranja"}
+    else if (param == secondaryColor.purple) {
+        document.getElementById("Morado").style.visibility = 'visible'
+        return "Morado"}
+    else if (param == tertiaryColor.blueishPurple) {
+        document.getElementById("PurpuraAzulado").style.visibility = 'visible'
+        return "Purpura Azulado"}
+    else if (param == tertiaryColor.greenishBlue) {
+        document.getElementById("AzulVerdoso").style.visibility = 'visible'
+        return "Azul Verdoso"}
+    else if (param == tertiaryColor.greenishYellow) {
+        document.getElementById("AmarilloVerdoso").style.visibility = 'visible'
+        return "Amarillo Verdoso"}
+    else if (param == tertiaryColor.reddishPurple) {
+        document.getElementById("MoradoRojizo").style.visibility = 'visible'
+        return "Morado rojizo"}
+    else if (param == tertiaryColor.orangedRed) {
+        document.getElementById("RojoAnaranjado").style.visibility = 'visible'
+        return "Rojo anaranjado"}
+    else if (param == tertiaryColor.orangedYellow) {
+        document.getElementById("AmarilloAnaranjado").style.visibility = 'visible'
+        return "Amarillo anaranjado"}
+    else if (param == "No es posible combinar") return "No es posible combinar"
 }

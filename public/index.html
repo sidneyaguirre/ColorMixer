@@ -1,60 +1,157 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Color Mixer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+<title>Mezclando COlores</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="6cors Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript">
+addEventListener("load", function() {
+    setTimeout(hideURLbar, 0);
+}, false);
+
+function hideURLbar() {
+    window.scrollTo(0, 1);
+}
+</script>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!--//theme-style-->
+<!--fonts-->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!--//fonts-->
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    $(".scroll").click(function(event) {
+        event.preventDefault();
+        $('html,body').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 1000);
+    });
+});
+</script>
 </head>
 
 <body>
-    <div class="section">
-        <div class="header">
+<!--start-banner-->
+<div class="header" id="home">
+<div class="header-top">
+    <h2>Bienvenid@ a</h2>
+    <h1>Mezclando Colores</h1>
+    <a href="home.html"><img src="images/cover_artes.png" alt="" /></a>
+    <div class="header-top-bottom">
+        <a href="#about" class="scroll"><img src="images/logo-3.png" alt="" /></a>
+    </div>
+</div>
+<div class="header-home">
+    <div class="fixed-header">
+        <!-- start h_menu4 -->
+        <!-- <div class="h_menu4">
+            <div class="header-left">
+                ------------------------------------------------
+            </div>
+        </div> -->
+        <!-- end h_menu4 -->
+    </div>
+</div>
+<!--start-about-->
+<div class="about" id="about">
+    <div class="container">
+        <div class="about-main">
+            <h3>-*-</h3>
             <h1>Mezclando Colores</h1>
-        </div>
-        <div class="columns">
-            <div class="column1">
-                <h3>Primer color para la mezcla:</h3>
-                <select id="color1">
-                <option value="yellow" style="background-color: yellow">Amarillo</option>
-                <option value="blue" style="background-color:blue">Azul</option>
-                <option value="red" style="background-color:red">Rojo</option>
-            </select>
+            <div class="about-top">
+                <div class="col-md-4 about-left">
+                    <h4>Seleccione color 1 a mezclar:</h4>
+                    <select id="color1">
+                        <option value="yellow" style="background-color: yellow">Amarillo</option>
+                        <option value="blue" style="background-color:blue">Azul</option>
+                        <option value="red" style="background-color:red">Rojo</option>
+                    </select>
+                </div>
+                <div class="col-md-4 about-left">
+                    <img src="images/mixed.png" alt="" />
+                    <div class="actions">
+                        <p>mezclar</p>
+                        <form>
+                            <div class="sub-button">
+                                <input type="button" value="Mezclar" id="mix">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="result">
+                        <h4>Resultado:</h4>
+                        <img src="images/mixed.png" alt="" />
+                        <p id="result" ></p>
+                        <option id="Amarillo" style="background-color: yellow" >Amarillo</option>
+                        <option id="Azul" style="background-color: blue" >Azul</option>
+                        <option id="Rojo" style="background-color: red" >Rojo</option>
+                        <option id="Verde" style="background-color:green">Verde</option>
+                        <option id="Naranja" style="background-color:darkorange">Naranja</option>
+                        <option id="Morado" style="background-color:darkmagenta">Morado</option>
+                        <option id="PurpuraAzulado" style="background-color:#4B0082">PurpuraAzulado</option>
+                        <option id="AzulVerdoso" style="background-color:#008080">Azul Verdoso</option>
+                        <option id="AmarilloVerdoso" style="background-color:#C3CD76">Amarillo Verdoso</option>
+                        <option id="MoradoRojizo" style="background-color:#FF0000">Morado Rojizo</option>
+                        <option id="RojoAnaranjado" style="background-color:#FF4500">Rojo Anaranjado</option>
+                        <option id="AmarilloAnaranjado" style="background-color:#FEC870">Amarillo Anaranjado</option>
+                    </div>
+                </div>
+                <div class="col-md-4 about-left">
+                    <h4>Seleccione color 2 a mezclar:</h4>
+                    <select id="color2">
+                        <option value="yellow" style="background-color: yellow">Amarillo</option>
+                        <option value="blue" style="background-color:blue">Azul</option>
+                        <option value="red" style="background-color:red">Rojo</option>
+                        <option value="green" style="background-color:green">Verde</option>
+                        <option value="orange" style="background-color:darkorange">Naranja</option>
+                        <option value="purple" style="background-color:darkmagenta">Morado</option>
+                    </select>
+                </div>
+                <div class="clearfix"></div>
             </div>
-            <div class="column2">
-                <h3>Segundo color para la mezcla:</h3>
-                <select id="color2">
-                <option value="yellow" style="background-color: yellow">Amarillo</option>
-                <option value="blue" style="background-color:blue">Azul</option>
-                <option value="red" style="background-color:red">Rojo</option>
-                <option value="green" style="background-color:green">Verde</option>
-                <option value="orange" style="background-color:darkorange">Naranja</option>
-                <option value="purple" style="background-color:darkmagenta">Morado</option>
-            </select>
-            </div>
         </div>
+    </div>
+</div>
+<a href="index.html"><input type="button" value="Volver a mezclar"/></a>
+<input type="button" value="Salir" onclick="closeWindow" />
+<!--end-about-->
+<!--start-footer-->
+<div class="footer">
+    <div class="container">
+        <div class="footer-text">
+            <p>Mezclando Colores</p>
+            <p>~<i>By</i>: Sidney Aguirre & John Galeano</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+            };
+            */
 
-        <div class="actions">
-            <p id="result"></p>
-            <input type="button" value="Mezclar" id="mix" />
-            <input type="button" value="Salir" onclick="closeWindow" />
-            <!-- <button type="button" onclick="window.open('', '_self', ''); window.close();">Discard</button> -->
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
 
-            <script language="javascript" type="text/javascript">
-                function closeWindow() {
-                    window.open('', '_parent', '');
-                    this.window.close();
-                }
-            </script>
-        </div>
-        <div class="footer">
-            <p>by: Sidney Aguirre & John Galeano</p>
-        </div>
-        </section>
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <script src="./js/mix.js"></script>
+        });
+    </script>
+    <a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</div>
+<!--end-footer-->
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./js/mix.js"></script>
 </body>
 
 </html>
