@@ -1,0 +1,351 @@
+/*
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+*/
+
+h4,
+h5,
+h6,
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
+p {
+    margin: 0;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    background: #fff;
+}
+
+body a {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.header {
+    background: url(../images/banner.jpg) no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 860px;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 1em;
+}
+
+
+/* start h_menu */
+
+.h_menu4 {
+    margin: 0 auto;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.header-home {
+    margin-top: 5.5%;
+    z-index: 999;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    background: #272727;
+}
+
+.header-left {
+    width: 70%;
+    float: left;
+}
+
+.header-right {
+    width: 30%;
+    float: right;
+}
+
+.header-right ul {
+    padding: 0;
+    margin-top: 6px;
+}
+
+.header-right ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.header-right ul li span,
+.about-left ul li span {
+    background: url(../images/social-sprit.png) no-repeat;
+    width: 34px;
+    height: 38px;
+    display: block;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.header-right ul li span.fb,
+.about-left ul li span.fb {
+    background-position: 0px 0px;
+}
+
+.header-right ul li span.twit,
+.about-left ul li span.twit {
+    background-position: -34px 0px;
+}
+
+.header-right ul li span.drbl,
+.about-left ul li span.drbl {
+    background-position: -68px 0px;
+}
+
+.header-right ul li span.yt {
+    background-position: -102px 0px;
+}
+
+.header-right ul li span.fb:hover,
+.about-left ul li span.fb:hover {
+    background-position: 0px -38px;
+}
+
+.header-right ul li span.twit:hover,
+.about-left ul li span.twit:hover {
+    background-position: -34px -38px;
+}
+
+.header-right ul li span.drbl:hover,
+.about-left ul li span.drbl:hover {
+    background-position: -68px -38px;
+}
+
+.header-right ul li span.yt:hover {
+    background-position: -102px -38px;
+}
+
+.header-top {
+    padding-top: 4%;
+}
+
+.header-top h2 {
+    font-size: 1.3em;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 9% 0px 0px 0px;
+}
+
+.header-top h1 {
+    font-size: 3.2em;
+    color: #fff;
+    font-weight: 300;
+    margin: 15px 0px 0px 0px;
+    letter-spacing: 4px;
+}
+
+.header-top-bottom {
+    margin-top: 10%;
+}
+
+.header-left-logo {
+    width: 20%;
+    float: left;
+    text-align: right;
+}
+
+.header-left-text {
+    width: 77%;
+    float: right;
+    text-align: left;
+}
+
+
+/*--end-header--*/
+
+
+/*--start-about--*/
+
+.about-main {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.about {
+    background: url(../images/about-banner.jpg) no-repeat;
+    background-size: 100% 100%;
+    min-height: 720px;
+}
+
+.about-left h4 {
+    color: #fff;
+    font-size: 2.3em;
+    font-weight: 300;
+    margin: 18px 0px 10px 0px;
+}
+
+.about-left h5 {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.about-left ul {
+    padding: 0;
+    margin-top: 1.2em;
+}
+
+.about-left ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.about-left ul li span.sap {
+    background-position: -136px 0px;
+}
+
+.about-left ul li span.sap:hover {
+    background-position: -136px -38px;
+}
+
+.about-top {
+    background: #333333;
+    padding: 5em 0px;
+    margin-top: 3%;
+}
+
+.about-main h3 {
+    color: #fff;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+/*--end-about--*/
+
+
+/*--start-footer--*/
+
+.footer {
+    padding: 2em 0px;
+    background: #e22e2e;
+    text-align: center;
+}
+
+.footer-text p {
+    color: #ffffff;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 1em;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.footer-text p a {
+    color: #3c2424;
+}
+
+.footer-text p a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    overflow: hidden;
+    width: 43px;
+    height: 43px;
+    border: none;
+    text-indent: 100%;
+    background: url(../images/scroll-top.png) no-repeat 7px 7px #e22e2e;
+    border-radius: 0.3em;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    -o-border-radius: 0.3em;
+    -ms-border-radius: 0.3em;
+}
+
+
+/*--end-footer--*/
+
+.sub-button input[type="submit"] {
+    outline: none;
+    color: #999999;
+    background: #e1e1e1;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 8px 19px;
+    -webkit-appearance: none;
+    font-family: 'Roboto', sans-serif;
+    border: 3px solid #999;
+    border-radius: 2.3em;
+    -webkit-border-radius: 2.3em;
+    -moz-border-radius: 2.3em;
+    -o-border-radius: 2.3em;
+    -ms-border-radius: 2.3em;
+}
+
+.sub-button input[type="submit"]:hover {
+    color: #fff;
+    border: 3px solid #e22e2e;
+    background: #e22e2e;
+    text-decoration: none;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+}
+
+.sub-button {
+    margin-top: 15px;
+}
+
+.actions {
+    align-self: auto;
+    align-items: center;
+}
+
+
+/* 
+select#color1,
+select#color2 {
+color: black;
+box-sizing: content-box;
+font-size: 20px;
+padding: 8px 16px;
+border: 1px solid transparent;
+border-color: azure;
+} */

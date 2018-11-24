@@ -47,7 +47,6 @@ function mixer() {
             }
         }
     }
-    //document.write("El color resultante es " + color3)
     let trueColor3 = isColor(color3);
     result.innerHTML = "El color resultante es: " + trueColor3;
     console.log(color3);
@@ -80,8 +79,11 @@ let tertiaryColor = {
 };
 
 function isColor(param) {
-    if (param == primaryColor.yellow) return "amarillo";
-    else if (param == primaryColor.blue) return "azul";
+    if (param == primaryColor.yellow) {
+        return "amarillo";
+
+        result.innerHTML = "hola" +
+    } else if (param == primaryColor.blue) return "azul";
     else if (param == primaryColor.red) return "rojo";
     else if (param == secondaryColor.green) return "verde";
     else if (param == secondaryColor.orange) return "Naranja";
@@ -94,12 +96,3 @@ function isColor(param) {
     else if (param == tertiaryColor.orangedYellow) return "Amarillo anaranjado";
     else if (param == "No es posible combinar") return "No es posible combinar";
 }
-
-/* var imaColors = [];
-imaColors["yellow"] = "colors/yellow.png";
-class viewColors {
-    constructor(c, n) {
-        this.color = c;
-        this.name = n;
-    }
-} */
