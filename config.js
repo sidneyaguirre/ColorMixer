@@ -1,3 +1,4 @@
+//Configuracion de rutas
 const path = require('path')
 
 const rootPath = path.resolve(__dirname, '.')

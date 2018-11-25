@@ -1,6 +1,8 @@
+//Iniciamos con poner un metodo que escucha cuando al boton mexclar es presionado
 let b = document.getElementById("mix");
 b.addEventListener("click", mixer);
 
+//Funcion que hace la comparacion de colores selecionados en color1 y color2, y retoirna el color resultante
 function mixer() {
     let color1 = document.getElementById("color1").value;
     let color2 = document.getElementById("color2").value;
@@ -49,8 +51,9 @@ function mixer() {
     }
 
     let trueColor3 = isColor(color3);
+    //Muestra en el Front end el color resultante con la funcion innerHTML
     result.innerHTML = "El color resultante es: " + trueColor3 
-    console.log(color3);
+    //TRansforma los caracteres del resultado en tipo JSON para guardar en base de datos
     axios
         .post("http://localhost:8080/savecolor/", { color: color3 }, {})
         .then(data => {
@@ -58,6 +61,7 @@ function mixer() {
         });
 }
 
+// los objetos primaryColor, secondaryColor y tertiaryColor contienen los colores respectivos a colores primarios, secundarios y terciarios
 let primaryColor = {
     yellow: "yellow",
     blue: "blue",
@@ -79,6 +83,7 @@ let tertiaryColor = {
     blueishPurple: "blueishPurple"
 };
 
+//FUncion cambia los resultados de ingles a español, y invoca al elemento que muestra la paleta de color resultado
 function isColor(param) {
     document.getElementById("Amarillo").style.visibility = 'hidden'
     document.getElementById("Azul").style.visibility = 'hidden'
