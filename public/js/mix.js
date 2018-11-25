@@ -61,6 +61,7 @@ function mixer() {
     }else if(color3=="empty"){
         result.innerHTML = "Por favor seleccione el color"
     }else{
+        document.getElementById("mix").style.visibility = 'hidden'
         result.innerHTML = ""
     }
     //TRansforma los caracteres del resultado en tipo JSON para guardar en base de datos
