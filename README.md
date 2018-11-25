@@ -7,5 +7,8 @@ Web app for mixing (some) colors 🖌️🎨
 - To deploy: node app.js
 - Done!
 
-### Go to our web app:
+### Go to our web app
 https://mezclandocolores.herokuapp.com/index.html
+
+~By: sidneyaguirre & johnagaleano
+🤖 - 👽
