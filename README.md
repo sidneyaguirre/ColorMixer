@@ -1,6 +1,11 @@
 # ColorMixer
 Web app for mixing (some) colors 🖌️🎨
 
+~By: [sidneyaguirre](https://github.com/sidneyaguirre) &  [johnagaleano](https://github.com/JohnaGaleano)
+
+🤖 - 👽
+
+
 
 ### To run locally
 - install dependencies using command: npm i
@@ -10,5 +15,3 @@ Web app for mixing (some) colors 🖌️🎨
 ### Go to our web app
 https://mezclandocolores.herokuapp.com/index.html
 
-~By: sidneyaguirre & johnagaleano
-🤖 - 👽
