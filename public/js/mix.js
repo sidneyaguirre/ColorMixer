@@ -58,8 +58,12 @@ function mixer() {
     //Muestra en el Front end el color resultante con la funcion innerHTML
     if(color3=="No es posible combinar"){
         result.innerHTML = color3
+        document.getElementById("resultext").style.visibility = 'hidden'
+        document.getElementById("mix").style.visibility = 'hidden'
     }else if(color3=="empty"){
         result.innerHTML = "Por favor seleccione el color"
+        document.getElementById("resultext").style.visibility = 'hidden'
+        document.getElementById("mixagain").style.visibility = 'hidden'
     }else{
         document.getElementById("mix").style.visibility = 'hidden'
         result.innerHTML = ""
