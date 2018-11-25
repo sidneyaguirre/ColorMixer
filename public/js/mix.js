@@ -7,55 +7,60 @@ function mixer() {
     let color1 = document.getElementById("color1").value;
     let color2 = document.getElementById("color2").value;
     let color3;
-
-    if (color1 === color2) {
-        color3 = color1;
-    } else {
-        if (color1 == primaryColor.yellow) {
-            if (color2 == primaryColor.blue) {
-                color3 = secondaryColor.green;
-            } else if (color2 == primaryColor.red) {
-                color3 = secondaryColor.orange;
-            } else if (color2 == secondaryColor.green) {
-                color3 = tertiaryColor.greenishYellow;
-            } else if (color2 == secondaryColor.orange) {
-                color3 = tertiaryColor.orangedYellow;
-            } else {
-                color3 = "No es posible combinar";
-            }
-        } else if (color1 == primaryColor.blue) {
-            if (color2 == primaryColor.yellow) {
-                color3 = secondaryColor.green;
-            } else if (color2 == primaryColor.red) {
-                color3 = secondaryColor.purple;
-            } else if (color2 == primaryColor.green) {
-                color3 = tertiaryColor.greenishBlue;
-            } else if (color2 == tertiaryColor.purple) {
-                color3 = tertiaryColor.blueishPurple;
-            } else {
-                color3 = "No es posible combinar";
-            }
-        } else if (color1 == primaryColor.red) {
-            if (color2 == primaryColor.yellow) {
-                color3 = secondaryColor.orange;
-            } else if (color2 == primaryColor.blue) {
-                color3 = secondaryColor.purple;
-            } else if (color2 == secondaryColor.orange) {
-                color3 = tertiaryColor.orangedRed;
-            } else if (color2 == secondaryColor.purple) {
-                color3 = tertiaryColor.reddishPurple;
-            } else {
-                color3 = "No es posible combinar";
+    console.log(color1, color2)
+    if((color1=="empty") || (color2 =="empty")){color3="empty"}
+    else{
+        if (color1 === color2) {
+            color3 = color1;
+        } else {
+            if (color1 == primaryColor.yellow) {
+                if (color2 == primaryColor.blue) {
+                    color3 = secondaryColor.green;
+                } else if (color2 == primaryColor.red) {
+                    color3 = secondaryColor.orange;
+                } else if (color2 == secondaryColor.green) {
+                    color3 = tertiaryColor.greenishYellow;
+                } else if (color2 == secondaryColor.orange) {
+                    color3 = tertiaryColor.orangedYellow;
+                } else {
+                    color3 = "No es posible combinar";
+                }
+            } else if (color1 == primaryColor.blue) {
+                if (color2 == primaryColor.yellow) {
+                    color3 = secondaryColor.green;
+                } else if (color2 == primaryColor.red) {
+                    color3 = secondaryColor.purple;
+                } else if (color2 == primaryColor.green) {
+                    color3 = tertiaryColor.greenishBlue;
+                } else if (color2 == tertiaryColor.purple) {
+                    color3 = tertiaryColor.blueishPurple;
+                } else {
+                    color3 = "No es posible combinar";
+                }
+            } else if (color1 == primaryColor.red) {
+                if (color2 == primaryColor.yellow) {
+                    color3 = secondaryColor.orange;
+                } else if (color2 == primaryColor.blue) {
+                    color3 = secondaryColor.purple;
+                } else if (color2 == secondaryColor.orange) {
+                    color3 = tertiaryColor.orangedRed;
+                } else if (color2 == secondaryColor.purple) {
+                    color3 = tertiaryColor.reddishPurple;
+                } else {
+                    color3 = "No es posible combinar";
+                }
             }
         }
     }
+    
 
     let trueColor3 = isColor(color3);
     //Muestra en el Front end el color resultante con la funcion innerHTML
     if(color3=="No es posible combinar"){
         result.innerHTML = color3
-    }
-    else{
+    }else if(color3=="empty"){
+        result.innerHTML = "Por favor seleccione el color"
+    }else{
         result.innerHTML = ""
     }
     //TRansforma los caracteres del resultado en tipo JSON para guardar en base de datos
