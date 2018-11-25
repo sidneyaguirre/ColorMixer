@@ -1,5 +1,17 @@
+
+/* 
+CÓDIGO TOMADO DE W3 
+ */
+
 /*
- * jQuery EasIng v1.1.2 - http://gsgd.co.uk/sandbox/jquery.easIng.php
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+*/
+
+/* 
+ *jQuery EasIng v1.1.2 - http://gsgd.co.uk/sandbox/jquery.easIng.php
  *
  * Uses the built In easIng capabilities added In jQuery 1.1
  * to offer multiple easIng options

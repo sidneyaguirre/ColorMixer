@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Mezclando COlores</title>
+<title>Mezclando Colores</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Mezclando Colores - Mix Color" />
@@ -44,7 +44,7 @@ jQuery(document).ready(function($) {
 <div class="header-top">
     <h2>Bienvenid@ a</h2>
     <h1>Mezclando Colores</h1>
-    <a href="home.html"><img src="images/cover_artes.png" alt="" /></a>
+    <img src="images/cover_artes.png" alt="" />
     <div class="header-top-bottom">
         <a href="#about" class="scroll"><img src="images/logo-3.png" alt="" /></a>
     </div>
@@ -79,8 +79,7 @@ jQuery(document).ready(function($) {
                         </form>
                     </div>
                     <div class="result">
-                        <h4>Resultado:</h4>
-                        <img src="images/mixed.png" alt="" />
+                        <h4 id="resultext">Resultado:</h4>
                         <p id="result" ></p>
                         <option id="Amarillo" style="background-color: yellow" >Amarillo</option>
                         <option id="Azul" style="background-color: blue" >Azul</option>
@@ -108,8 +107,8 @@ jQuery(document).ready(function($) {
                     </select>
                 </div>
                 <div class="clearfix"></div>
-                <a href="index.html"><input type="button" value="Volver a mezclar"/></a>
-                <a href="home.html"><input type="button" value="Salir" onclick="closeWindow"/></a>
+                <div><a href="index.html"><input id="mixagain" type="button" value="Volver a mezclar"/></a></div>
+                <div><a href="out.html"><input id="goout" type="button" value="Salir" onclick="closeWindow"/></a></div>
             </div>
         </div>
     </div>

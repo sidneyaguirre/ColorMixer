@@ -1,3 +1,8 @@
+
+/* 
+CÓDIGO TOMADO DE W3 
+ */
+
 /*
 Author: W3layout
 Author URL: http://w3layouts.com
@@ -2500,3 +2505,19 @@ option#AmarilloAnaranjado{
     visibility: hidden;
 }
 
+h4#resultext, input#mixagain{
+	visibility: hidden;
+}
+
+input#goout, input#mixagain, input#mix{
+	margin: 0;
+	margin-top: 15px;
+	background-color: red; /* Rojo */
+	border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

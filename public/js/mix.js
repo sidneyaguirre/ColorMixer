@@ -52,7 +52,12 @@ function mixer() {
 
     let trueColor3 = isColor(color3);
     //Muestra en el Front end el color resultante con la funcion innerHTML
-    result.innerHTML = "El color resultante es: " + trueColor3 
+    if(color3=="No es posible combinar"){
+        result.innerHTML = color3
+    }
+    else{
+        result.innerHTML = ""
+    }
     //TRansforma los caracteres del resultado en tipo JSON para guardar en base de datos
     axios
         .post("http://localhost:8080/savecolor/", { color: color3 }, {})
@@ -85,6 +90,8 @@ let tertiaryColor = {
 
 //FUncion cambia los resultados de ingles a español, y invoca al elemento que muestra la paleta de color resultado
 function isColor(param) {
+    document.getElementById("resultext").style.visibility = 'visible'
+    document.getElementById("mixagain").style.visibility = 'visible'
     document.getElementById("Amarillo").style.visibility = 'hidden'
     document.getElementById("Azul").style.visibility = 'hidden'
     document.getElementById("Rojo").style.visibility = 'hidden'

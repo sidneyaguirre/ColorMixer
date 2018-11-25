@@ -1,4 +1,16 @@
 
+/* 
+CÓDIGO TOMADO DE W3 
+ */
+
+/*
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+*/
+
+
 var ww = document.body.clientWidth;
 
 $(document).ready(function() {
