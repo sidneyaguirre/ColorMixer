@@ -3,8 +3,9 @@ Web app for mixing (some) colors 🖌️🎨
 
 ***
 ### To run locally:
-- install dependencies using command: npm i
-- To deploy: node app.js
+- Clone the project
+- Install dependencies using command: npm i
+- To deploy use command: node app.js
 - Done!
 
 
