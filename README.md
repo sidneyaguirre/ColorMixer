@@ -1,19 +1,18 @@
 # ColorMixer
 Web app for mixing (some) colors 🖌️🎨
 
-~By: [sidneyaguirre](https://github.com/sidneyaguirre) &  [johnagaleano](https://github.com/JohnaGaleano)
-
-🤖 - 👽
-
-
-
-
-### To run locally
+***
+### To run locally:
 - install dependencies using command: npm i
 - To deploy: node app.js
 - Done!
 
 
-### Go to our web app
+### Go to the web app "Mezclando Colores":
 https://mezclandocolores.herokuapp.com/index.html
 
+***
+
+~By: [sidneyaguirre](https://github.com/sidneyaguirre) &  [johnagaleano](https://github.com/JohnaGaleano)
+
+🤖 - 👽
