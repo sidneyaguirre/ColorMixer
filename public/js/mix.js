@@ -30,9 +30,9 @@ function mixer() {
                     color3 = secondaryColor.green;
                 } else if (color2 == primaryColor.red) {
                     color3 = secondaryColor.purple;
-                } else if (color2 == primaryColor.green) {
+                } else if (color2 == secondaryColor.green) {
                     color3 = tertiaryColor.greenishBlue;
-                } else if (color2 == tertiaryColor.purple) {
+                } else if (color2 == secondaryColor.purple) {
                     color3 = tertiaryColor.blueishPurple;
                 } else {
                     color3 = "No es posible combinar";
